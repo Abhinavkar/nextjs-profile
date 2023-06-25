@@ -6,7 +6,7 @@ import Layout from '../../components/layout';
 export default function FirstPost() {
     return (
       <>
-      <Layout>
+      <Layout > 
         <Head>
           <title>First Post</title>
           <script src="https://connect.facebook.net/en_US/sdk.js" />

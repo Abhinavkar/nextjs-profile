@@ -4,6 +4,9 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    background:linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
   }
   
   .headingXl {
@@ -20,15 +23,25 @@
     margin: 1rem 0;
   }
   
-  .headingMd {
+  .headingMd, .headingMd >  p {
     font-size: 1.2rem;
     line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
   }
   
-  .borderCircle {
-    border-radius: 9999px;
+  .borderCircle  {
+     border-radius: 9999px ;
+    /* border: 5px solid black ;
+    border-color: black; */ 
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding:8px;
+    transition:  0.3 ease-in-out;
   }
   
+  .borderCircle:hover {
+    transform: scale(1.1);
+  }
   .colorInherit {
     color: inherit;
   }
